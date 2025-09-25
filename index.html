@@ -1,104 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mounika Gangola | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mounika Gangola | Project Manager • Data & BI</title>
+    <meta
+      name="description"
+      content="Portfolio of Mounika Gangola — Project Manager skilled in data analysis, Power BI, process improvement, and stakeholder management."
+    />
+    <meta name="author" content="Mounika Gangola" />
+    <meta
+      property="og:title"
+      content="Mounika Gangola | Project Manager • Data & BI"
+    />
+    <meta
+      property="og:description"
+      content="Projects, experience, skills, and certifications."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <img src="https://via.placeholder.com/150" alt="Mounika Gangola Photo" />
-      <h1>Mounika Gangola</h1>
-      <p>Project Manager | Data Analyst | AI Enthusiast</p>
-      <p>
-        <a href="mailto:mounikagangola.001@gmail.com"
-          >mounikagangola.001@gmail.com</a
-        >
-        |
-        <a href="https://linkedin.com/in/mounikagangola" target="_blank"
-          >LinkedIn</a
-        >
-      </p>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-logo" aria-hidden="true">MG</span>
+          <span class="brand-text">Mounika <strong>Gangola</strong></span>
+        </a>
+
+        <!-- CSS-only mobile nav (checkbox hack) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certs">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I’m a results-driven Project Manager with 3+ years of experience
-          leading digital transformation projects, streamlining workflows, and
-          leveraging AI tools for operational efficiency. Passionate about data
-          visualization, prompt engineering, and collaborative innovation.
-        </p>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top" role="banner">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Project Manager • Data & BI</h1>
+            <p class="lead">
+              Results-driven PM with 3.3+ years in data analysis, process
+              improvement, and stakeholder collaboration—translating business
+              needs into measurable outcomes with Power BI, Microsoft 365, and
+              Agile delivery.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#contact">Work with me</a>
+              <a class="btn btn-ghost" href="#experience">View experience</a>
+            </div>
+            <ul class="meta">
+              <li>
+                <a href="mailto:mounikagangola.001@gmail.com"
+                  >mounikagangola.001@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+919032139464">+91 90321 39464</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mounikagangola"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-media">
+            <!-- Replace with your photo -->
+            <figure class="portrait">
+              <img src="assets/profile.jpg" alt="Portrait of Mounika Gangola" />
+            </figure>
+            <div class="badges">
+              <span class="badge">Power BI</span>
+              <span class="badge">Agile</span>
+              <span class="badge">Process Improvement</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>Featured Projects</h2>
-        <ul>
-          <li>
-            <strong>AI-based Agricultural Advisory Platform</strong><br />
-            Built a multilingual voice platform using Google Cloud AI tools —
-            Finalist at Agentic AI Hackathon 2025.
-          </li>
-          <li>
-            <strong>Business Intelligence Dashboards</strong><br />
-            Designed Power BI dashboards improving reporting efficiency by 30%.
-          </li>
-          <li>
-            <strong>PLM + DNC Integration</strong><br />
-            Managed enterprise-level projects at TATA Electronics, reducing
-            costs and improving access control.
-          </li>
-        </ul>
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="section-title">About</h2>
+          <p>
+            I specialize in aligning cross-functional teams around clear KPIs
+            and roadmaps, creating user stories & wireframes, and delivering
+            data-driven improvements. I’ve optimized resource allocation (20%
+            cost reduction) and built interactive dashboards (30% reporting
+            efficiency) while driving adoption of new apps (35% increase).
+          </p>
+          <div class="cards three-col">
+            <article class="card">
+              <h3>What I do</h3>
+              <ul>
+                <li>Project planning, WBS, budget & risk</li>
+                <li>Stakeholder engagement & vendor coordination</li>
+                <li>KPI tracking & data visualization (Power BI)</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>How I work</h3>
+              <ul>
+                <li>Agile sprints, backlogs & roadmaps</li>
+                <li>Clear communication & change management</li>
+                <li>UAT, QA, and impact analysis</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tools I use</h3>
+              <ul>
+                <li>Microsoft 365, Power BI, Excel, SQL</li>
+                <li>Jira, Confluence, SharePoint</li>
+                <li>Teamcenter, NX; AI tools (ChatGPT, Copilot)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Prompt Engineering for Project Managers – PMI (2025)</li>
-          <li>CPMAI – Cognitive Project Management in AI (2025)</li>
-          <li>
-            Career Essentials in Project Management – Microsoft & LinkedIn
-          </li>
-          <li>Six Sigma White Belt – CSSC</li>
-          <li>ISO 27001:2022 Awareness Training – Versatilist</li>
-        </ul>
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="exp-title">
+        <div class="container">
+          <h2 id="exp-title" class="section-title">Experience</h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="item-header">
+                  <h3>Tata Electronics Pvt. Ltd. — Project Manager</h3>
+                  <span class="item-meta">Jun 2023 – Present · Hosur, TN</span>
+                </header>
+                <ul>
+                  <li>
+                    Managed PLM & DNC solutions (Siemens Teamcenter, PLM-SAP,
+                    NX), Visitor Management System & Access Card projects.
+                  </li>
+                  <li>
+                    Defined KPIs, charters, scope; authored user stories &
+                    wireframes; prioritized backlogs for Agile sprints.
+                  </li>
+                  <li>
+                    Built WBS & schedules; monitored budgets to ensure on-time,
+                    on-budget delivery.
+                  </li>
+                  <li>
+                    Implemented risk mitigation & data-driven decisions for
+                    measurable efficiency & cost savings.
+                  </li>
+                  <li>
+                    Partnered with vendors to deliver solutions aligned to
+                    stakeholder goals; ensured seamless communication.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="item-header">
+                  <h3>Tata Electronics — Graduate Engineer Trainee</h3>
+                  <span class="item-meta">Jun 2022 – Jun 2023</span>
+                </header>
+                <ul>
+                  <li>
+                    Gathered & documented requirements in SharePoint; produced
+                    BRD/FRD and traceability matrices.
+                  </li>
+                  <li>
+                    Facilitated workshops, performed impact analysis, and
+                    coordinated cross-functional delivery.
+                  </li>
+                  <li>
+                    Conducted UAT & QA to validate deliverables against business
+                    objectives.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <aside class="highlights">
+            <h3>Key Achievements</h3>
+            <ul class="checklist">
+              <li>
+                20% operational cost reduction via data-driven process
+                improvements
+              </li>
+              <li>
+                30% reporting efficiency gain with interactive Power BI
+                dashboards
+              </li>
+              <li>
+                35% increase in user adoption of new business applications
+              </li>
+            </ul>
+          </aside>
+        </div>
       </section>
 
-      <section id="dashboard">
-        <h2>Sample Dashboard</h2>
-        <img
-          src="https://via.placeholder.com/800x400?text=Power+BI+Dashboard"
-          alt="Power BI Dashboard Example"
-          class="dashboard"
-        />
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title" class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <h3>Core</h3>
+              <ul class="tags">
+                <li>Agile & Scrum</li>
+                <li>Requirements</li>
+                <li>User Stories</li>
+                <li>Wireframes</li>
+                <li>WBS & Scheduling</li>
+                <li>Risk Mitigation</li>
+                <li>KPI Tracking</li>
+                <li>Change Management</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Data & Tools</h3>
+              <ul class="tags">
+                <li>Power BI</li>
+                <li>Excel (Pivot, VLOOKUP)</li>
+                <li>SQL (reporting)</li>
+                <li>Microsoft 365</li>
+                <li>Jira</li>
+                <li>Confluence</li>
+                <li>SharePoint</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Platforms</h3>
+              <ul class="tags">
+                <li>Teamcenter</li>
+                <li>NX</li>
+                <li>PLM-SAP</li>
+                <li>AI Tools (ChatGPT, Copilot, Gemini)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Soft Skills</h3>
+              <ul class="tags">
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          📧 Email:
-          <a href="mailto:mounikagangola.001@gmail.com"
-            >mounikagangola.001@gmail.com</a
-          >
-        </p>
-        <p>
-          🔗 LinkedIn:
-          <a href="https://linkedin.com/in/mounikagangola" target="_blank"
-            >linkedin.com/in/mounikagangola</a
-          >
-        </p>
-        <p>📱 Phone: +91 9032139464</p>
+      <!-- Certifications -->
+      <section class="section" id="certs" aria-labelledby="certs-title">
+        <div class="container">
+          <h2 id="certs-title" class="section-title">Certifications</h2>
+          <ul class="list">
+            <li>Talking to AI: Prompt Engineering for PMs — PMI (Aug 2025)</li>
+            <li>CPMAI — PMI (Aug 2025)</li>
+            <li>
+              Career Essentials in Project Management — Microsoft & LinkedIn
+              (Dec 2024)
+            </li>
+            <li>Power BI with Microsoft 365 — LinkedIn (Nov 2024)</li>
+            <li>Six Sigma White Belt — CSSC (Sep 2024)</li>
+            <li>ISO 27001:2022 Awareness — Versatilist (Sep 2024)</li>
+            <li>Generative AI Overview for PMs — PMI (May 2024)</li>
+            <li>IIMBx: Innovation & IT Mgmt (Dec 2023)</li>
+            <li>NPTEL IIT-Madras: Tech Forecasting (Apr 2023)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education" aria-labelledby="edu-title">
+        <div class="container">
+          <h2 id="edu-title" class="section-title">Education</h2>
+          <ul class="list">
+            <li>
+              Micro-Credit Program — IIT Guwahati, Masai, NSDC (Apr 2024 – Sep
+              2025) · CSE Focus
+            </li>
+            <li>
+              B.Tech — NIT Karnataka, Surathkal (2018 – 2022) · Electrical &
+              Electronics
+            </li>
+          </ul>
+          <h3 class="mt">Awards</h3>
+          <ul class="list">
+            <li>Outstanding Impact Award Team, Tata Electronics (2024–25)</li>
+            <li>
+              Finalist, Google Cloud Agentic AI Day 2025 (top 700+ of 9,100+
+              teams)
+            </li>
+            <li>Pratibha Award (2018), Govt. of Andhra Pradesh</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="section section-accent"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div>
+            <h2 id="contact-title" class="section-title">
+              Let’s build something great
+            </h2>
+            <p>
+              Open to roles and collaborations in Project Management, Data/BI,
+              and Process Improvement.
+            </p>
+            <ul class="contact-links">
+              <li>
+                <a
+                  href="mailto:mounikagangola.001@gmail.com"
+                  class="contact-link"
+                  >mounikagangola.001@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+919032139464" class="contact-link"
+                  >+91 90321 39464</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mounikagangola"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" aria-label="Static contact form (no JS)">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can I help?"
+                required
+              ></textarea>
+            </div>
+            <p class="form-note">
+              Demo only (HTML/CSS). Replace with your form handler if needed.
+            </p>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              disabled
+              aria-disabled="true"
+              title="Static demo"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Mounika Gangola. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2025</span> Mounika Gangola</p>
+        <nav aria-label="Footer">
+          <a href="#top">Back to top</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
