@@ -3,146 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
-    <title>Amelia Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Mounika Gangola | Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      header,
+      section {
+        margin-bottom: 40px;
+      }
+      h1,
+      h2 {
+        color: #005288;
+      }
+      a {
+        color: #0077cc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-          <span>Mounika</span>
-        </div>
-        <div class="links">
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <a href="#">Home</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <a href="#">About</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
-            <a href="#">Skills</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
-            <a href="#">Services</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <a href="#">Blogs</a>
-          </div>
-          <div
-            class="link contact-btn"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
-          >
-            <a href="#">Contact Us</a>
-          </div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-      </div>
-      <div class="dropdown">
-        <div class="links">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Skills</a>
-          <a href="">Services</a>
-          <a href="">Blogs</a>
-          <a href="">Contact Us</a>
-          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-        </div>
-      </div>
-    </nav>
-    <section>
-      <div class="main-container">
-        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-          <img src="main.png" alt="" />
-        </div>
-        <div class="content">
-          <h1
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="800"
-          >
-            Hey I'm <span>Amelia</span>
-          </h1>
-          <div
-            class="typewriter"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="900"
-          >
-            I'm a <span></span>
-          </div>
-          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            perferendis quas consectetur possimus maxime consequatur cupiditate
-            eos dolorum molestias praesentium error exercitationem rem labore
-            illo, in dolor, odio corporis excepturi?
-          </p>
-          <div
-            class="social-links"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-            data-aos-delay="1200"
-          >
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-          <div
-            class="btn"
-            data-aos="zoom-out-left"
-            data-aos-duration="1000"
-            data-aos-delay="1300"
-          >
-            <button>Download CV</button>
-          </div>
-        </div>
-      </div>
+    <header>
+      <h1>Mounika Gangola</h1>
+      <p>
+        <a href="mailto:mounikagangola.001@gmail.com"
+          >mounikagangola.001@gmail.com</a
+        >
+        |
+        <a href="https://linkedin.com/in/mounikagangola" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Mounika Gangola, a results-driven Project Manager with over 3
+        years of experience in data analysis, process improvement, and project
+        execution. I’m passionate about using AI tools and data-driven
+        strategies to solve complex problems and streamline business operations.
+      </p>
+      <p>
+        I currently work at TATA Electronics, where I manage PLM and
+        AI-integrated solutions that enhance collaboration and efficiency. I’ve
+        led projects that reduced operational costs by 20%, improved data
+        visualization by 30%, and boosted user adoption by 35%.
+      </p>
+      <p>
+        I love exploring the intersection of technology, AI, and project
+        management, and I’m constantly learning through IIT and IIM programs.
+        Let’s build the future, one project at a time!
+      </p>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-    <script>
-      function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
-      }
-      function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-500px)";
-      }
-    </script>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Voice-based Agricultural Platform</strong> – Finalist in
+          Google Cloud Agentic AI Hackathon. Built a multilingual voice
+          assistant using AI for farmers across India.
+        </li>
+        <li>
+          <strong>Power BI Dashboards</strong> – Designed interactive dashboards
+          improving business reporting by 30%.
+        </li>
+        <li>
+          <strong>PLM & VMS Integrations</strong> – Managed tech solutions for
+          TATA Electronics to optimize operations and reduce costs.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 Email:
+        <a href="mailto:mounikagangola.001@gmail.com"
+          >mounikagangola.001@gmail.com</a
+        >
+      </p>
+      <p>
+        🔗 LinkedIn:
+        <a href="https://linkedin.com/in/mounikagangola" target="_blank"
+          >linkedin.com/in/mounikagangola</a
+        >
+      </p>
+      <p>📱 Phone: +91 9032139464</p>
+    </section>
   </body>
 </html>
