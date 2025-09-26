@@ -46,7 +46,7 @@
           <span></span><span></span><span></span>
         </label>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary">
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -61,14 +61,14 @@
 
     <main id="main">
       <!-- Hero (IMAGE LEFT, TEXT RIGHT) -->
-      <section class="hero" id="top" role="banner">
+      <section class="hero" id="top" role="banner" aria-label="Intro">
         <div class="container hero-inner">
           <!-- IMAGE FIRST -->
           <div class="hero-media">
             <figure class="portrait">
               <img src="assets/profile.jpg" alt="Portrait of Mounika Gangola" />
             </figure>
-            <div class="badges">
+            <div class="badges" aria-label="Key strengths">
               <span class="badge">Power BI</span>
               <span class="badge">Agile</span>
               <span class="badge">Process Improvement</span>
@@ -80,16 +80,16 @@
             <h1>Mounika Gangola</h1>
             <h2 class="subtitle">Project Manager</h2>
             <p class="lead">
-              Results-driven Project Manager with 3.3 years experience in
+              Results-driven Project Manager with 3.3 years of experience in
               business analysis, process improvement, and stakeholder
-              collaboration translating business needs into measurable outcomes
+              collaboration—translating business needs into measurable outcomes
               with Power BI, Microsoft 365, and Agile delivery.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary" href="#contact">Work with me</a>
               <a class="btn btn-ghost" href="#experience">View experience</a>
             </div>
-            <ul class="meta">
+            <ul class="meta" aria-label="Contact quick links">
               <li>
                 <a href="mailto:mounikagangola.001@gmail.com"
                   >mounikagangola.001@gmail.com</a
@@ -100,8 +100,9 @@
                 <a
                   href="https://www.linkedin.com/in/mounika-gangola-a32110188/"
                   target="_blank"
-                  rel="noopener"
-                  >LinkedIn - Mounika Gangola/a
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile (opens in a new tab)"
+                  >LinkedIn — Mounika Gangola</a
                 >
               </li>
             </ul>
@@ -120,8 +121,8 @@
             cost reduction) and built interactive dashboards (30% reporting
             efficiency) while driving adoption of new apps (35% increase).
           </p>
-          <div class="cards three-col">
-            <article class="card">
+          <div class="cards three-col" role="list">
+            <article class="card" role="listitem">
               <h3>What I do</h3>
               <ul>
                 <li>Project planning, WBS, budget & risk</li>
@@ -129,15 +130,15 @@
                 <li>KPI tracking & data visualization (Power BI)</li>
               </ul>
             </article>
-            <article class="card">
+            <article class="card" role="listitem">
               <h3>How I work</h3>
               <ul>
                 <li>Agile sprints, backlogs & roadmaps</li>
                 <li>Clear communication & change management</li>
-                <li>UAT, QA, Riskand impact analysis</li>
+                <li>UAT, QA, risk & impact analysis</li>
               </ul>
             </article>
-            <article class="card">
+            <article class="card" role="listitem">
               <h3>Tools I use</h3>
               <ul>
                 <li>Microsoft 365, Power BI, Excel, SQL</li>
@@ -146,8 +147,8 @@
               </ul>
             </article>
           </div>
-          <aside class="highlights">
-            <h2>KEY ACHIEVEMENTS</h2>
+          <aside class="highlights" aria-labelledby="key-achievements">
+            <h2 id="key-achievements">Key Achievements</h2>
             <ul class="checklist">
               <li>
                 20% operational cost reduction via data-driven process
@@ -172,6 +173,7 @@
 
           <div class="timeline">
             <article class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
                 <header class="item-header">
                   <h2>TATA ELECTRONICS PRIVATE LIMITED</h2>
@@ -204,6 +206,7 @@
             </article>
 
             <article class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
                 <header class="item-header">
                   <h3>Graduate Engineer Trainee</h3>
@@ -248,7 +251,7 @@
               </ul>
             </div>
             <div>
-              <h3>Data & Tools</h3>
+              <h3>Data &amp; Tools</h3>
               <ul class="tags">
                 <li>Power BI</li>
                 <li>Excel (Pivot, VLOOKUP)</li>
@@ -290,14 +293,14 @@
             <li>Talking to AI: Prompt Engineering for PMs — PMI (Aug 2025)</li>
             <li>CPMAI — PMI (Aug 2025)</li>
             <li>
-              Career Essentials in Project Management — Microsoft & LinkedIn
+              Career Essentials in Project Management — Microsoft &amp; LinkedIn
               (Dec 2024)
             </li>
             <li>Power BI with Microsoft 365 — LinkedIn (Nov 2024)</li>
             <li>Six Sigma White Belt — CSSC (Sep 2024)</li>
             <li>ISO 27001:2022 Awareness — Versatilist (Sep 2024)</li>
             <li>Generative AI Overview for PMs — PMI (May 2024)</li>
-            <li>IIMBx: Innovation & IT Mgmt (Dec 2023)</li>
+            <li>IIMBx: Innovation &amp; IT Mgmt (Dec 2023)</li>
             <li>NPTEL IIT-Madras: Tech Forecasting (Apr 2023)</li>
           </ul>
         </div>
@@ -359,16 +362,19 @@
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/mounikagangola"
+                  href="https://www.linkedin.com/in/mounika-gangola-a32110188/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   class="contact-link"
                   >LinkedIn</a
                 >
               </li>
             </ul>
           </div>
-          <form class="contact-form" aria-label="Static contact form (no JS)">
+          <form
+            class="contact-form"
+            aria-label="Static contact form (no JavaScript submission)"
+          >
             <div class="form-row">
               <label for="name">Name</label>
               <input id="name" name="name" placeholder="Your name" required />
